@@ -1,0 +1,185 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url(images/unnamed-3.png);
+  display: grid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  grid-template-columns: 1fr 400px 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  font-size: 2rem;
+  text-align: center;
+ 
+}
+
+
+
+.space {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main {
+  display: grid;
+  grid-template-rows: 1fr 56px 96px 60px 1fr 55px 142px;
+  justify-content: center;
+  
+ 
+}
+
+
+.box {
+
+  
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.sony_logo {
+  width: 112px;
+  height: 56px;
+  margin-left: 140px;
+}
+
+.x_button {
+  margin-left: 85px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+ 
+}
+
+.PlayStation {
+  width: 400px;
+
+}
+
+.take_email {
+  width: 282px;
+  height:34px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: black;
+  
+}
+
+.take_email::placeholder {
+  color: rgb(129, 119, 119);
+}
+
+.send_email {
+  color: white;
+  font-weight: bolder;
+  font-size: 12px;
+  background-color: rgb(72, 101, 205);
+  width: 287px;
+  height:34px;
+  margin-bottom: 10px;
+  opacity: .4;
+  
+  
+}
+
+
+
+.top_text {
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, HiraKakuProN-W3, 'Noto Sans CJK JP', sans-serif;
+  text-align: left;
+  padding-left: 25px;
+
+}
+#no_underline {
+  text-decoration: none;
+  color: blue;
+  font-size: 11px;
+}
+
+.whiteback_text {
+  display: flex;
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, HiraKakuProN-W3, 'Noto Sans CJK JP', sans-serif;
+  flex-direction: column;
+  
+  
+}
+
+#help_link {
+  margin-right: 170px;
+  color: blue;
+}
+
+
+.make_an_account {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  text-decoration: none;
+}
+
+.button {
+  width: 282px;
+  height:34px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid grey;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.helping {
+  background-color: white;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+  
+}
+
+.help {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, HiraKakuProN-W3, 'Noto Sans CJK JP', sans-serif;
+  color: gray;
+}
+
+
+
+@media screen and (max-width: 800px) and (min-width: 510px){
+  .main {
+    grid-template-rows: 16% 56px 96px 60px 1fr 55px 142px;
+  }
+  
+}
+
+
+@media screen and (max-width: 500px) and (min-width: 200px){
+  body {
+    background-image: none;
+    grid-template-columns: auto;
+    background-color: white;
+  }
+
+  .main {
+    grid-template-columns: none;
+    grid-template-rows: 0fr 56px 96px 60px 140px 50px 45vh;
+  }
+
+  
+
+  
+}
