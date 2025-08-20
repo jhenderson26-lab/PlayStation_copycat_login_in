@@ -157,7 +157,7 @@ body {
   color: gray;
 }
 
-@media screen and (max-width: 499px) {
+/* @media screen and (max-width: 499px) {
   body {
     background-image: none;
     grid-template-columns: auto;
@@ -174,15 +174,13 @@ body {
     display: flex;
     justify-self: center;
   }
-
-  
-
-  
 }
+   */
 
 
 
-@media screen and (min-width: 500px) and (max-width: 1024px) {
+
+@media screen and (max-width: 1400px) {
   .main {
     grid-template-rows: 16% 56px 96px 60px 1fr 55px 142px;
   }
