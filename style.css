@@ -157,29 +157,34 @@ body {
   color: gray;
 }
 
-
-
-@media screen and (max-width: 800px) and (min-width: 510px){
-  .main {
-    grid-template-rows: 16% 56px 96px 60px 1fr 55px 142px;
-  }
-  
-}
-
-
-@media screen and (max-width: 500px) and (min-width: 200px){
+@media screen and (max-width: 499px) {
   body {
     background-image: none;
     grid-template-columns: auto;
     background-color: white;
+    
   }
 
   .main {
     grid-template-columns: none;
-    grid-template-rows: 0fr 56px 96px 60px 140px 50px 45vh;
+    grid-template-rows: 0fr 56px 96px 60px 140px 50px 40%;
+  }
+
+  .top_text {
+    display: flex;
+    justify-self: center;
   }
 
   
 
+  
+}
+
+
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  .main {
+    grid-template-rows: 16% 56px 96px 60px 1fr 55px 142px;
+  }
   
 }
